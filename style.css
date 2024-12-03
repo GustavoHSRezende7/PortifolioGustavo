@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #6d56f1;
+  color: #0f0f0f;
+  margin: 0;
+}
+
+/* Estilização do cabeçalho */
+nav {
+  background: linear-gradient(90deg, #0b0281, #30026b); 
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  position: sticky; 
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #c8e6c9; /* Destaque ao passar o mouse */
+}
+
+/* Títulos e texto do site */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #f5f7f5;
+  text-align: center;
+}
+
+p {
+  font-size: 1.2rem;
+  max-width: 800px; /* largura do texto */
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #388e3c;
+  transform: translateY(-2px);
+}
+
+/* Estilo do formulário */
+form {
+  display: flex;               /* Usa flexbox */
+  flex-direction: column;      /* Organiza os elementos em coluna */
+  align-items: center;         /* Centraliza os elementos horizontalmente */
+  background: #f2f1f3;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Sombrinha leve para o formulário */
+  width: 100%;
+  max-width: 500px;            /* Limita a largura máxima do formulário */
+  margin: 0 auto;              /* Centraliza o formulário na tela */
+}
+
+form input, form textarea {
+  width: 100%;                 /* Faz com que os campos ocupem 100% da largura disponível */
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #0c0c0c;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form button {
+  width: 100%;                 /* Faz o botão ocupar toda a largura disponível */
+  padding: 0.8rem;
+  background-color: #0b0281;
+  color: rgb(243, 237, 237);
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+form button:hover {
+  background-color: #af5ae0;  /* Cor do botão ao passar o mouse */
+}
+
+/* Configurações para o container que envolve o link */
+.container {
+  text-align: center;   /* Centraliza o conteúdo dentro do container */
+}
+
+.centered-link {
+  font-size: 24px;
+  text-decoration: none;
+  color: #00000a;
+}
+
+.centered-link:hover {
+  text-decoration: underline;
+}
